@@ -1,8 +1,16 @@
-import Typography from '@mui/material/Typography';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 function App() {
     return (
-        <Typography>Test text</Typography>
+        <>
+            <ThemeProvider theme={theme}>
+                <Home />
+                <AboutMe />
+            </ThemeProvider>
+        </>
     );
 }
 
