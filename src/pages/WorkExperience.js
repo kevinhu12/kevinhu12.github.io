@@ -1,9 +1,9 @@
-import CenterBox from '../../shared/CenterBox';
+import CenterBox from '../shared/CenterBox';
 import Chip from '@mui/material/Chip';
-import CustomIcon from '../../shared/CustomIcon';
+import CustomIcon from '../shared/CustomIcon';
 import Grid from '@mui/material/Grid';
-import Section from '../../shared/Section';
-import SectionHeader from '../../shared/SectionHeader';
+import Section from '../shared/Section';
+import SectionHeader from '../shared/SectionHeader';
 import Stack from '@mui/material/Stack';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
@@ -11,10 +11,10 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import Text from '../../shared/Text';
+import Text from '../shared/Text';
 import { useTheme } from '@mui/material/styles';
 
-import { skills, workExperience } from '../../utils/constants';
+import { skills, workExperience } from '../utils/constants';
 
 const WorkExperience = ({
 
@@ -83,8 +83,6 @@ const WorkExperience = ({
                             </Stack>
                         </>
                     ))}
-
-                    
                 </Grid>
             </Grid>
         </Section>

@@ -1,6 +1,6 @@
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
-import WorkExperience from './pages/workExperience/WorkExperience';
+import WorkExperience from './pages/WorkExperience';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 
