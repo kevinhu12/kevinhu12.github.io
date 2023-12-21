@@ -1,10 +1,10 @@
 import CenterBox from '../shared/CenterBox';
+import CenterStack from '../shared/CenterStack';
 import Chip from '@mui/material/Chip';
 import CustomIcon from '../shared/CustomIcon';
 import Grid from '@mui/material/Grid';
 import Section from '../shared/Section';
 import SectionHeader from '../shared/SectionHeader';
-import Stack from '@mui/material/Stack';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -13,14 +13,13 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Text from '../shared/Text';
 import { useTheme } from '@mui/material/styles';
-
 import { skills, workExperience } from '../utils/constants';
 
 const WorkExperience = ({
 
 }) => {
     const theme = useTheme();
-    const numExperiences = workExperience.length;
+    const lastIdx = workExperience.length - 1;
 
     return (
         <Section>
@@ -40,12 +39,16 @@ const WorkExperience = ({
                                     <TimelineDot>
                                         <CustomIcon img={experience.logo} theme={theme} />
                                     </TimelineDot>
-                                    {idx != numExperiences - 1 && (<TimelineConnector />)}
+                                    {idx != lastIdx && (<TimelineConnector />)}
                                 </TimelineSeparator>
                                 <TimelineContent>
                                     <Text bold={true}>{experience.company}</Text>
                                     <Text>{`${experience.title} • ${experience.dates}`}</Text>
-                                    <Text type='secondary' paddingTop='1rem' paddingBottom='2rem'>
+                                    <Text 
+                                        type='secondary' 
+                                        paddingTop='1rem' 
+                                        paddingBottom={idx != lastIdx ? '2rem' : '0rem'}
+                                    >
                                         {experience.description}
                                     </Text>
                                 </TimelineContent>
@@ -61,13 +64,12 @@ const WorkExperience = ({
                             <CenterBox>
                                 <Text bold={true} paddingTop='1.5rem'>{skill.category}</Text>
                             </CenterBox>
-                            <Stack 
+                            <CenterStack 
                                 direction='row' 
                                 spacing={2} 
                                 useFlexGap 
-                                flexWrap='wrap' 
-                                justifyContent='center'
-                                sx={{ paddingTop: '1rem', paddingBottom: '4rem' }}
+                                paddingTop='1rem' 
+                                paddingBottom='4rem'
                             >
                                 {skill.items.map((item) => (
                                     <Chip
@@ -80,7 +82,7 @@ const WorkExperience = ({
                                         }}
                                     />
                                 ))}
-                            </Stack>
+                            </CenterStack>
                         </>
                     ))}
                 </Grid>

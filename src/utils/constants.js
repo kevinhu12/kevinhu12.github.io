@@ -66,3 +66,21 @@ export const skills = [
     }
     
 ];
+
+export const projects = [
+    {
+        name: 'Project 1',
+        description: 'very good project',
+        img: { alt: 'Project 1', src: logo }
+    },
+    {
+        name: 'Project 1',
+        description: 'very good project',
+        img: { alt: 'Project 1', src: logo }
+    },
+    {
+        name: 'Project 1',
+        description: 'very good project',
+        img: { alt: 'Project 1', src: logo }
+    }
+];

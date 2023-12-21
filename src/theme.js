@@ -16,6 +16,10 @@ const theme = createTheme({
         height: 40,
         fontSize: '0.9rem',
         fontWeight: 'bold'
+    },
+    card: {
+        maxWidth: 350,
+        mediaHeight: 200
     }
 });
 
