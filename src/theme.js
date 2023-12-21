@@ -9,7 +9,8 @@ const theme = createTheme({
         secondary: { main: '#ffffff' }
     },
     sectionSpacing: 100,
-    gridSpacing: 2
+    gridSpacing: 2,
+    customIconDimensions: '2.5rem'
 });
 
 export default theme;
