@@ -37,3 +37,32 @@ export const workExperience = [
         description: 'I started my career writing automated tests and performing QA testing for Iotum.'
     }
 ];
+
+export const skills = [
+    {
+        category: 'Languages',
+        items: [
+            'C#',
+            'JavaScript & TypeScript',
+            'C++',
+            'Python',
+            'Java & Kotlin'
+        ]
+    },
+    {
+        category: 'Frameworks',
+        items: [
+            'React',
+            'ASP.NET Core'
+        ]
+    },
+    {
+        category: 'Technologies',
+        items: [
+            'AWS',
+            'SQL',
+            'NoSQL'
+        ]
+    }
+    
+];

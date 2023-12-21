@@ -6,11 +6,17 @@ const theme = createTheme({
     },
     palette: {
         primary: { main: '#000000' },
-        secondary: { main: '#ffffff' }
+        secondary: { main: '#ffffff' },
+        info: { main: '#9bbdf9' }
     },
     sectionSpacing: 100,
     gridSpacing: 2,
-    customIconDimensions: '2.5rem'
+    customIconDimensions: '2.5rem',
+    chip: {
+        height: 40,
+        fontSize: '0.9rem',
+        fontWeight: 'bold'
+    }
 });
 
 export default theme;
