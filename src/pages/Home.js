@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Section from '../shared/Section';
 import Text from '../shared/Text';
 import { motion } from 'framer-motion';
@@ -13,19 +12,6 @@ const Home = ({
 
     const letters = Array.from('I\'m Kevin')
 
-    const container = {
-        hidden: { opacity: 0 },
-        visible: (i = 1) => ({
-            opacity: 1,
-            transition: {staggerChildren: 0.03, delayChildren: 0.04 * i }
-        })
-    }
-
-    const child = {
-        visible: { opacity: 1, x: 0, transition: { type: 'spring', damping: 12, stiffness: 100 }},
-        hidden: { opacity: 0, x: 20, transition: { type: 'spring', damping: 12, stiffness: 100 } }
-    }
-
     return (
         
             <ParallaxBanner
@@ -33,12 +19,38 @@ const Home = ({
                 style={{ height: '40rem' }}
             >
                 <Section paddingTop='0rem'>
-                    <Text 
+                    <Box position='absolute' display='flex' flexDirection='row'>
+                    
+                        {letters.map((word, idx) => (
+                            <motion.span
+                                key={idx} 
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0, 
+                                    transition: { 
+                                        type: 'spring', 
+                                        damping: 12, 
+                                        stiffness: 100, 
+                                        delay: `${(idx+6)/10}`
+                                    }
+                                }}
+                            >
+                                <Text 
+                                    color='secondary' 
+                                    sx={{ mt: '12rem', fontSize: '6rem' }}
+                                >
+                                    {word === " " ? "\u00A0" : word}
+                                </Text>
+                            </motion.span>
+                            
+                        ))}
+                        
+                    </Box>
+                    {/* <Text 
                         color='secondary' 
                         sx={{ mt: '12rem', fontSize: '6rem', position: 'absolute' }}
                     >
                         I'm Kevin
-                    </Text>
+                    </Text> */}
                     <Text
                         align='center'
                         color='secondary'
