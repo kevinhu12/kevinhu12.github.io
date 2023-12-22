@@ -12,13 +12,11 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Text from '../shared/Text';
-import { useTheme } from '@mui/material/styles';
 import { skills, workExperience } from '../utils/constants';
 
 const WorkExperience = ({
-
+    theme
 }) => {
-    const theme = useTheme();
     const lastIdx = workExperience.length - 1;
 
     return (

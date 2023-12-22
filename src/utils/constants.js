@@ -99,3 +99,5 @@ export const contactInfo = [
         link: 'https://www.linkedin.com/in/kevinhu12/'
     }
 ];
+
+export const letters = Array.from('I\'m Kevin');
