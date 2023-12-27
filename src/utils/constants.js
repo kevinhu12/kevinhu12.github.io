@@ -101,3 +101,9 @@ export const contactInfo = [
 ];
 
 export const letters = Array.from('I\'m Kevin');
+
+export const aboutMe = [
+    'My name is Kevin Hu, and I\'m a fourth-year Computer Science student studying at the University of Waterloo.',
+    'I\'m a fast learner who\'s passionate about writing good code, strengthening my programming arsenal, and working with new technologies.',
+    'Currently, I\'m seeking an internship for Fall 2024!'
+];

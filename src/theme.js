@@ -7,7 +7,8 @@ const theme = createTheme({
     palette: {
         primary: { main: '#000000' },
         secondary: { main: '#ffffff' },
-        info: { main: '#9bbdf9' }
+        info: { main: '#9bbdf9' },
+        background: { default: '#f1e3d3' }
     },
     sectionSpacing: 100,
     gridSpacing: 2,
