@@ -13,7 +13,7 @@ const ContactInfo = ({
     theme
 }) => (
     <Box sx={{ backgroundColor: 'black' }}>
-        <Section paddingBottom='2rem'>
+        <Section paddingTop='5rem' paddingBottom='5rem'>
             <Grid container spacing={theme.gridSpacing}>
                 <Grid item xs={12}>
                     <CenterBox>

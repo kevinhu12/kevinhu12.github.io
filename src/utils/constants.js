@@ -74,18 +74,18 @@ export const skills = [
 
 export const projects = [
     {
-        name: 'Project 1',
-        description: 'very good project',
+        name: 'SpotiLight',
+        description: 'A program to change the light blinking speed of LEDs depending on the genre of song being played on a Spotify account.',
         img: { alt: 'Project 1', src: logo }
     },
     {
-        name: 'Project 1',
-        description: 'very good project',
+        name: 'Quizzler',
+        description: 'A desktop application where users can automatically generate exam-style questions based on content from an uploaded file. Includes taking quizzes, auto-marking, and account persistence.',
         img: { alt: 'Project 1', src: logo }
     },
     {
-        name: 'Project 1',
-        description: 'very good project',
+        name: 'Roguelike',
+        description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
         img: { alt: 'Project 1', src: logo }
     }
 ];

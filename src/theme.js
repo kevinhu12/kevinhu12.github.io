@@ -10,7 +10,8 @@ const theme = createTheme({
         info: { main: '#9bbdf9' },
         background: { 
             default: '#f1e3d3',
-            workExperience: '#ede6f2'
+            workExperience: '#ede6f2',
+            projects: '#c9e4de'
         }
     },
     sectionSpacing: 100,
