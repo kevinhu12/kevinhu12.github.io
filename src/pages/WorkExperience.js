@@ -36,7 +36,7 @@ const WorkExperience = ({
                             {workExperience.map((experience, idx) => (
                                 <TimelineItem>
                                     <TimelineSeparator>
-                                        <TimelineDot>
+                                        <TimelineDot sx={{ backgroundColor: 'white' }}>
                                             <CustomIcon img={experience.logo} theme={theme} />
                                         </TimelineDot>
                                         {idx != lastIdx && (<TimelineConnector />)}
