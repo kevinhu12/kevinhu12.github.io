@@ -8,7 +8,10 @@ const theme = createTheme({
         primary: { main: '#000000' },
         secondary: { main: '#ffffff' },
         info: { main: '#9bbdf9' },
-        background: { default: '#f1e3d3' }
+        background: { 
+            default: '#f1e3d3',
+            workExperience: '#ede6f2'
+        }
     },
     sectionSpacing: 100,
     gridSpacing: 2,
