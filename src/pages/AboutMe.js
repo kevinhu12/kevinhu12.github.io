@@ -13,7 +13,7 @@ const AboutMe = ({
     <Section>
         <Grid container spacing={theme.gridSpacing}>
             <Grid item xs={6}>
-                <SectionHeader>About Me</SectionHeader>
+                <SectionHeader sx={{ paddingBottom: '1rem' }}>About Me</SectionHeader>
                 {aboutMe.map((text) => (
                     <Text sx={{ paddingBottom: '1rem' }}>{text}</Text>
                 ))}

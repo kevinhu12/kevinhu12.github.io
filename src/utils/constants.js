@@ -81,17 +81,17 @@ export const projects = [
     {
         name: 'SpotiLight',
         description: 'A program to change the light blinking speed of LEDs depending on the genre of song being played on a Spotify account.',
-        img: { alt: 'Project 1', src: logo }
+        img: { alt: 'SpotiLight', src: logo }
     },
     {
         name: 'Quizzler',
         description: 'A desktop application where users can automatically generate exam-style questions based on content from an uploaded file. Includes taking quizzes, auto-marking, and account persistence.',
-        img: { alt: 'Project 1', src: quizzler }
+        img: { alt: 'Quizzler', src: quizzler }
     },
     {
         name: 'Roguelike',
         description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
-        img: { alt: 'Project 1', src: logo }
+        img: { alt: 'Roguelike', src: logo }
     }
 ];
 
@@ -131,7 +131,7 @@ export const hobbies = [
     },
     {
         hobby: 'Gaming',
-        description: 'My go-to pastime for cooling down at the end of the day. Destiny 2 has been my favourite ever since I picked it up, but some other games I have enjoyed are Apex Legends, Hollow Knight, and Project Zomboid. I\'m also currently on my first playthrough of Cyberpunk! These games were what inspired me to learn game development in my free time.',
+        description: 'My go-to pastime for cooling down at the end of the day. Destiny 2 has been my favourite ever since I picked it up, but some other games I have enjoyed are Apex Legends, Hollow Knight, and Project Zomboid. I\'m also currently on my first playthrough of Cyberpunk 2077! These games were what inspired me to learn game development in my free time.',
         img: gaming
     }
 ];
