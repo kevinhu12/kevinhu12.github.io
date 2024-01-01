@@ -3,6 +3,8 @@ import spsLogo from '../assets/sps-commerce-logo.png';
 import sehLogo from '../assets/seh-logo.png';
 import spotworkLogo from '../assets/spotwork-logo.png';
 import iotumLogo from '../assets/iotum-logo.png';
+import athletics from '../assets/athletics-soccer.jpg';
+import gaming from '../assets/destiny.png';
 import logo from '../assets/logo.png';
 
 export const workExperience = [
@@ -111,4 +113,22 @@ export const aboutMe = [
     'My name is Kevin Hu, and I\'m a fourth-year Computer Science student studying at the University of Waterloo.',
     'I\'m a fast learner who\'s passionate about writing good code, strengthening my programming arsenal, and working with new technologies.',
     'Currently, I\'m seeking an internship for Fall 2024!'
+];
+
+export const hobbies = [
+    {
+        hobby: 'Hackathons',
+        description: 'test desc',
+        img: logo
+    },
+    {
+        hobby: 'Athletics',
+        description: 'I\'ve played competitive soccer for over 10 years, split between the Stouffville and Markham rep teams. These moments have become some of my most cherished memories, such as winning the Richmond Hill Challenge Cup tournament. I currently play in the Adult League at Markham Soccer Club, and I still enjoy every second of it. At a more casual level, I also play volleyball, basketball, spikeball, you name it. Lastly, I\'m a Toronto Maple Leafs fan, so I like to catch their games on TV whenever Hockey Night in Canada rolls around.',
+        img: athletics
+    },
+    {
+        hobby: 'Gaming',
+        description: 'test desc',
+        img: gaming
+    }
 ];

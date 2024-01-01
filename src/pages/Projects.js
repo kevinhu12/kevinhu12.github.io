@@ -13,7 +13,7 @@ import { projects } from '../utils/constants';
 const Projects = ({
     theme
 }) => (
-    <Section paddingBottom='6rem'>
+    <Section>
         <Grid container spacing={theme.gridSpacing}>
             <Grid item xs={12}>
                 <SectionHeader>

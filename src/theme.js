@@ -11,7 +11,8 @@ const theme = createTheme({
         background: { 
             default: '#f1e3d3',
             workExperience: '#ede6f2',
-            projects: '#c9e4de'
+            projects: '#c9e4de',
+            hobbies: '#c6def1'
         }
     },
     sectionSpacing: 100,
