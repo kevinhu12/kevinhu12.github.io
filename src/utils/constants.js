@@ -3,6 +3,9 @@ import spsLogo from '../assets/sps-commerce-logo.png';
 import sehLogo from '../assets/seh-logo.png';
 import spotworkLogo from '../assets/spotwork-logo.png';
 import iotumLogo from '../assets/iotum-logo.png';
+
+import quizzler from '../assets/quizzler.jpg';
+
 import athletics from '../assets/athletics-soccer.jpg';
 import gaming from '../assets/destiny.png';
 import logo from '../assets/logo.png';
@@ -83,7 +86,7 @@ export const projects = [
     {
         name: 'Quizzler',
         description: 'A desktop application where users can automatically generate exam-style questions based on content from an uploaded file. Includes taking quizzes, auto-marking, and account persistence.',
-        img: { alt: 'Project 1', src: logo }
+        img: { alt: 'Project 1', src: quizzler }
     },
     {
         name: 'Roguelike',
@@ -118,17 +121,17 @@ export const aboutMe = [
 export const hobbies = [
     {
         hobby: 'Hackathons',
-        description: 'test desc',
+        description: 'The perfect environment for pushing my programming skills to the next level. One of the hackathons that I enjoyed the most was Hack the North. Our group created a program to change LED light blinking speed depending on the genre of song being played. You can view our demo here! Other competitions that I\'ve participated in are ClimaTech and the Digital Inclusion Challenge.',
         img: logo
     },
     {
         hobby: 'Athletics',
-        description: 'I\'ve played competitive soccer for over 10 years, split between the Stouffville and Markham rep teams. These moments have become some of my most cherished memories, such as winning the Richmond Hill Challenge Cup tournament. I currently play in the Adult League at Markham Soccer Club, and I still enjoy every second of it. At a more casual level, I also play volleyball, basketball, spikeball, you name it. Lastly, I\'m a Toronto Maple Leafs fan, so I like to catch their games on TV whenever Hockey Night in Canada rolls around.',
+        description: 'I\'ve played competitive soccer for over 10 years, split between the Stouffville and Markham rep teams. These moments have become some of my most cherished memories. I currently play in the Adult League at Markham Soccer Club, and I still enjoy every second of it. I\'m also an avid fan of my hometown teams—the Toronto Maple Leafs and Toronto Raptors—and I like to catch their games whenever they\'re on TV.',
         img: athletics
     },
     {
         hobby: 'Gaming',
-        description: 'test desc',
+        description: 'My go-to pastime for cooling down at the end of the day. Destiny 2 has been my favourite ever since I picked it up, but some other games I have enjoyed are Apex Legends, Hollow Knight, and Project Zomboid. I\'m also currently on my first playthrough of Cyberpunk! These games were what inspired me to learn game development in my free time.',
         img: gaming
     }
 ];

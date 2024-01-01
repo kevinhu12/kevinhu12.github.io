@@ -28,7 +28,7 @@ const Hobbies = ({
                 <ContentBox backgroundColor={theme.palette.background.hobbies}>
                     {hobbies.map((hobby) => (
                         <Box sx={{ margin: '2rem' }}>
-                            <Divider sx={{ fontWeight: 'bold' }}>{hobby.hobby}</Divider>
+                            <Divider sx={{ '&::before, &::after': { borderColor: 'black' }, fontWeight: 'bold' }}>{hobby.hobby}</Divider>
                             <Grid container alignItems='center'>
 
                                 {/* Image and content */}
