@@ -43,7 +43,7 @@ const WorkExperience = ({
                                     <TimelineContent>
                                         <Text bold={true}>{experience.company}</Text>
                                         <Text>{`${experience.title} • ${experience.dates}`}</Text>
-                                        <Stack direction='row' spacing={1} useFlexGap justifyContent='flex-start'>
+                                        <Stack direction='row' spacing={1} useFlexGap>
                                             {experience.skills.map((skill) => (
                                                 <Chip
                                                     color='info'

@@ -3,10 +3,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CenterBox from '../shared/CenterBox';
 import CenterStack from '../shared/CenterStack';
+import Chip from '@mui/material/Chip';
 import ContentBox from '../shared/ContentBox';
 import Grid from '@mui/material/Grid';
 import Section from '../shared/Section';
 import SectionHeader from '../shared/SectionHeader';
+import Stack from '@mui/material/Stack';
 import Text from '../shared/Text';
 import { projects } from '../utils/constants';
 
@@ -34,7 +36,19 @@ const Projects = ({
                                 />
                                 <CardContent>
                                     <Text bold={true}>{project.name}</Text>
-                                    <Text type='secondary'>{project.description}</Text>
+                                    <Stack direction='row' spacing={1} useFlexGap>
+                                        {project.skills.map((skill) => (
+                                            <Chip
+                                                color='info'
+                                                label={skill}
+                                                size='small'
+                                                sx={{ fontWeight: theme.chip.fontWeight }}
+                                            />
+                                        ))}
+                                    </Stack>
+                                    <Text type='secondary' paddingTop='1rem'>
+                                        {project.description}
+                                    </Text>
                                 </CardContent>
                             </Card>
                         ))}
