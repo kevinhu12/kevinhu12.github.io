@@ -19,8 +19,6 @@ const theme = createTheme({
     gridSpacing: 2,
     customIconDimensions: '2.5rem',
     chip: {
-        height: 40,
-        fontSize: '0.9rem',
         fontWeight: 'bold'
     },
     card: {

@@ -16,82 +16,61 @@ export const workExperience = [
         logo: { alt: 'Autodesk', src: autodeskLogo},
         dates: 'Jan 2024 - Present',
         title: 'Software Engineer',
-        description: 'My current co-op!'
+        description: 'My current co-op!',
+        skills: ['GraphQL', 'Java', 'AWS']
     },
     {
         company: 'SPS Commerce',
         logo: { alt: 'SPS Commerce', src: spsLogo },
         dates: 'May 2023 - Aug 2023',
         title: 'Software Engineer',
-        description: 'I was most recently a software engineer on the Data Pipeline team for SPS Commerce, where I used AWS services to enhance state machines while delivering new features to the backend and frontend product.'
+        description: 'I was most recently a software engineer on the Data Pipeline team for SPS Commerce, where I used AWS services to enhance state machines while delivering new features to the backend and frontend product.',
+        skills: ['AWS', 'C#', 'TypeScript', 'SQL']
     },
     {
         company: 'SEH Computer Systems',
         logo: { alt: 'SEH Computer Systems', src: sehLogo },
         dates: 'Sep 2022 - Dec 2022',
         title: 'Software Developer',
-        description: 'I developed hierarchical class structures to store financial data, built RESTful APIs to encapsulate features for developer use, and performed code releases.'
+        description: 'I developed hierarchical class structures to store financial data, built RESTful APIs to encapsulate features for developer use, and performed code releases.',
+        skills: ['C#',  'ASP.NET Core', 'SQL']
     },
     {
         company: 'Spotwork',
         logo: { alt: 'Spotwork', src: spotworkLogo },
         dates: 'Jan 2022 - Apr 2022',
         title: 'Full-stack Developer',
-        description: 'I began my first formal software development work here, adding features to Spotwork\'s web platform and developing cloud functions to manage backend actions.'
+        description: 'I began my first formal software development work here, adding features to Spotwork\'s web platform and developing cloud functions to manage backend actions.',
+        skills: ['React', 'JavaScript', 'Firebase']
     },
     {
         company: 'Iotum Corporation',
         logo: { alt: 'Iotum Corporation', src: iotumLogo },
         dates: 'May 2021 - Aug 2021',
         title: 'QA & Technical Analyst',
-        description: 'I started my career writing automated tests and performing QA testing for Iotum.'
+        description: 'I started my career writing automated tests and performing QA testing for Iotum.',
+        skills: ['JavaScript', 'Selenium']
     }
-];
-
-export const skills = [
-    {
-        category: 'Languages',
-        items: [
-            'C#',
-            'JavaScript & TypeScript',
-            'C++',
-            'Python',
-            'Java & Kotlin'
-        ]
-    },
-    {
-        category: 'Frameworks',
-        items: [
-            'React',
-            'ASP.NET Core'
-        ]
-    },
-    {
-        category: 'Technologies',
-        items: [
-            'AWS',
-            'SQL',
-            'NoSQL'
-        ]
-    }
-    
 ];
 
 export const projects = [
     {
         name: 'SpotiLight',
         description: 'A program to change the light blinking speed of LEDs depending on the genre of song being played on a Spotify account.',
-        img: { alt: 'SpotiLight', src: logo }
+        img: { alt: 'SpotiLight', src: logo },
+        skills: ['Python', 'Spotify API', 'Arduino API']
     },
     {
         name: 'Quizzler',
         description: 'A desktop application where users can automatically generate exam-style questions based on content from an uploaded file. Includes taking quizzes, auto-marking, and account persistence.',
-        img: { alt: 'Quizzler', src: quizzler }
+        img: { alt: 'Quizzler', src: quizzler },
+        skills: ['Kotlin', 'OpenAI API']
     },
     {
         name: 'Roguelike',
         description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
-        img: { alt: 'Roguelike', src: logo }
+        img: { alt: 'Roguelike', src: logo },
+        skills: ['Unity', 'C#']
     }
 ];
 
