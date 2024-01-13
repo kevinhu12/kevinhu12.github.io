@@ -12,13 +12,27 @@ const AboutMe = ({
 }) => (
     <Section>
         <Grid container spacing={theme.gridSpacing}>
-            <Grid item xs={6}>
+            <Grid 
+                item 
+                xs={12} 
+                md={6}
+                display='flex'
+                flexDirection='column'
+                justifyContent='center'
+                sx={{ [theme.breakpoints.down('md')]: { mb: 1 }}}
+            >
                 <SectionHeader sx={{ paddingBottom: '1rem' }}>About Me</SectionHeader>
                 {aboutMe.map((text) => (
                     <Text sx={{ paddingBottom: '1rem' }}>{text}</Text>
                 ))}
             </Grid>
-            <Grid item xs={6}>
+            <Grid 
+                item 
+                xs={12}
+                md={6}
+                display='flex'
+                justifyContent='center'
+            >
                 <CenterBox>
                     <Avatar
                         alt='Kevin Hu Avatar'

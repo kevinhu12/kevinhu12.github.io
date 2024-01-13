@@ -32,12 +32,19 @@ const Hobbies = ({
                             <Grid container alignItems='center'>
 
                                 {/* Image and content */}
-                                <Grid item xs={4}>
+                                <Grid 
+                                    item 
+                                    xs={12} 
+                                    md={4}
+                                    display='flex'
+                                    justifyContent='center'
+                                    sx={{ [theme.breakpoints.down('md')]: { mb: 1 }}}
+                                >
                                     <Box
                                         component='img'
                                         sx={{ 
                                             maxHeight: 270, 
-                                            maxWidth: 330,
+                                            maxWidth: '90%',
                                             borderRadius: 3,
                                             margin: '1.2rem 0rem'
                                         }}
@@ -45,7 +52,13 @@ const Hobbies = ({
                                         src={hobby.img}
                                     />
                                 </Grid>
-                                <Grid item xs={8}>
+                                <Grid 
+                                    item 
+                                    xs={12}
+                                    md={8}
+                                    display='flex'
+                                    justifyContent='center'
+                                >
                                     <Text type='secondary'>{hobby.description}</Text>
                                 </Grid>
 

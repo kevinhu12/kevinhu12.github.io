@@ -14,7 +14,11 @@ const Home = ({
         style={{ height: '40rem' }}
     >
         <Section paddingTop='0rem'>
-            <Box position='absolute' display='flex' flexDirection='row'>
+            <Box 
+                position='absolute' 
+                display='flex' 
+                flexDirection='row'
+            >
             
                 {/* Letter animation */}
                 {letters.map((letter, idx) => (
@@ -30,7 +34,7 @@ const Home = ({
                             }
                         }}
                     >
-                        <Text 
+                        <Text
                             color='secondary' 
                             sx={{ mt: '12rem', fontSize: '6rem' }}
                         >
@@ -41,7 +45,6 @@ const Home = ({
             </Box>
             
             <Text
-                align='center'
                 color='secondary'
                 sx={{ mt: '20rem', fontSize: '2rem', position: 'absolute' }}
             >
