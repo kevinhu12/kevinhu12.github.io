@@ -24,7 +24,7 @@ const theme = createTheme({
     card: {
         maxWidth: 350,
         mediaHeight: 300,
-        backgroundColor: '#ffffff99'
+        backgroundColor: '#aad9cd'
     }
 });
 

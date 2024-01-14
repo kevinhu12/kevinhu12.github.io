@@ -28,7 +28,13 @@ const Projects = ({
                 <ContentBox backgroundColor={theme.palette.background.projects}>
                     <CenterStack direction='row' spacing={2} useFlexGap sx={{ margin: '2rem' }}>
                         {projects.map((project) => (
-                            <Card sx={{ maxWidth: theme.card.maxWidth, background: theme.card.backgroundColor }}>
+                            <Card 
+                                sx={{ 
+                                    maxWidth: theme.card.maxWidth, 
+                                    background: theme.card.backgroundColor,
+                                    [theme.breakpoints.down('md')]: { maxWidth: '95%' }
+                                }}
+                            >
                                 <CardMedia
                                     sx={{ height: theme.card.mediaHeight }}
                                     image={project.img.src}
