@@ -6,6 +6,7 @@ import iotumLogo from '../assets/iotum-logo.png';
 
 import quizzler from '../assets/quizzler.jpg';
 
+import hackathons from '../assets/hackathons.png';
 import athletics from '../assets/athletics-soccer.jpg';
 import gaming from '../assets/destiny.png';
 import logo from '../assets/logo.png';
@@ -100,8 +101,8 @@ export const aboutMe = [
 export const hobbies = [
     {
         hobby: 'Hackathons',
-        description: 'The perfect environment for pushing my programming skills to the next level. One of the hackathons that I enjoyed the most was Hack the North. Our group created a program to change LED light blinking speed depending on the genre of song being played. You can view our demo here! Other competitions that I\'ve participated in are ClimaTech and the Digital Inclusion Challenge.',
-        img: logo
+        description: 'The perfect environment for pushing my programming skills to the next level. One of the hackathons that I enjoyed the most was Hack the North. Our group created a Python program to change the blinking speed of LED lights depending on the genre of song being played. Other competitions that I\'ve participated in are ClimaTech and the Digital Inclusion Challenge.',
+        img: hackathons
     },
     {
         hobby: 'Athletics',
