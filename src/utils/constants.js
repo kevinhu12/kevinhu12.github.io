@@ -5,6 +5,7 @@ import spotworkLogo from '../assets/spotwork-logo.png';
 import iotumLogo from '../assets/iotum-logo.png';
 
 import quizzler from '../assets/quizzler.jpg';
+import vibe from '../assets/vibe.png';
 
 import hackathons from '../assets/hackathons.png';
 import athletics from '../assets/athletics-soccer.jpg';
@@ -56,16 +57,16 @@ export const workExperience = [
 
 export const projects = [
     {
-        name: 'SpotiLight',
-        description: 'A program to change the light blinking speed of LEDs depending on the genre of song being played on a Spotify account.',
-        img: { alt: 'SpotiLight', src: logo },
-        skills: ['Python', 'Spotify API', 'Arduino API']
-    },
-    {
         name: 'Quizzler',
         description: 'A desktop application where users can automatically generate exam-style questions based on content from an uploaded file. Includes taking quizzes, auto-marking, and account persistence.',
         img: { alt: 'Quizzler', src: quizzler },
         skills: ['Kotlin', 'OpenAI API']
+    },
+    {
+        name: 'Vibe',
+        description: 'A Discord bot used to play and manage music in voice channels. Utilized every day in my personal servers!',
+        img: { alt: 'Discord', src: vibe },
+        skills: ['JavaScript', 'Discord API']
     },
     {
         name: 'Roguelike',
