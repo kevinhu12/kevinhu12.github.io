@@ -18,8 +18,8 @@ export const workExperience = [
         logo: { alt: 'Autodesk', src: autodeskLogo},
         dates: 'Jan 2024 - Present',
         title: 'Software Engineer',
-        description: 'My current co-op!',
-        skills: ['GraphQL', 'Java', 'AWS']
+        description: 'My current co-op! I work on enhancing the GraphQL backend APIs with new functionality to accomodate user needs.',
+        skills: ['GraphQL', 'Java', 'Spring Boot', 'AWS']
     },
     {
         company: 'SPS Commerce',
