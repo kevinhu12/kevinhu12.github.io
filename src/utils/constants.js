@@ -64,7 +64,7 @@ export const projects = [
     {
         name: 'Vibe',
         description: 'A Discord bot used to play and manage music in voice channels. Utilized every day in my personal servers!',
-        img: { alt: 'Discord', src: vibe },
+        img: { alt: 'Vibe', src: vibe },
         skills: ['JavaScript', 'Discord API']
     },
     {

@@ -13,6 +13,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Text from '../shared/Text';
 import { workExperience } from '../utils/constants';
+import { motion } from 'framer-motion';
 
 const WorkExperience = ({
     theme
@@ -44,13 +45,27 @@ const WorkExperience = ({
                                         <Text bold={true}>{experience.company}</Text>
                                         <Text>{`${experience.title} • ${experience.dates}`}</Text>
                                         <Stack direction='row' spacing={1} useFlexGap>
-                                            {experience.skills.map((skill) => (
-                                                <Chip
-                                                    color='info'
-                                                    label={skill}
-                                                    size='small'
-                                                    sx={{ fontWeight: theme.chip.fontWeight }}
-                                                />
+                                            {experience.skills.map((skill, idx) => (
+                                                <motion.span
+                                                    key={idx} 
+                                                    initial={{ opacity: 0, x: 20 }}
+                                                    whileInView={{ opacity: 1, x: 0, 
+                                                        transition: { 
+                                                            type: 'spring', 
+                                                            damping: 12, 
+                                                            stiffness: 100, 
+                                                            delay: `${(idx+6)/10}`
+                                                        }
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+                                                    <Chip
+                                                        color='info'
+                                                        label={skill}
+                                                        size='small'
+                                                        sx={{ fontWeight: theme.chip.fontWeight }}
+                                                    />
+                                                </motion.span>
                                             ))}
                                         </Stack>
                                         <Text 

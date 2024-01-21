@@ -11,6 +11,7 @@ import SectionHeader from '../shared/SectionHeader';
 import Stack from '@mui/material/Stack';
 import Text from '../shared/Text';
 import { projects } from '../utils/constants';
+import { motion } from 'framer-motion';
 
 const Projects = ({
     theme
@@ -26,39 +27,45 @@ const Projects = ({
             {/* Project cards */}
             <Grid item xs={12}>
                 <ContentBox backgroundColor={theme.palette.background.projects}>
-                    <CenterStack direction='row' spacing={2} useFlexGap sx={{ margin: '2rem' }}>
-                        {projects.map((project) => (
-                            <Card 
-                                sx={{ 
-                                    maxWidth: theme.card.maxWidth, 
-                                    background: theme.card.backgroundColor,
-                                    [theme.breakpoints.down('md')]: { maxWidth: '95%' }
-                                }}
-                            >
-                                <CardMedia
-                                    sx={{ height: theme.card.mediaHeight }}
-                                    image={project.img.src}
-                                    title={project.img.alt}
-                                />
-                                <CardContent>
-                                    <Text bold={true}>{project.name}</Text>
-                                    <Stack direction='row' spacing={1} useFlexGap>
-                                        {project.skills.map((skill) => (
-                                            <Chip
-                                                color='info'
-                                                label={skill}
-                                                size='small'
-                                                sx={{ fontWeight: theme.chip.fontWeight }}
-                                            />
-                                        ))}
-                                    </Stack>
-                                    <Text type='secondary' paddingTop='1rem'>
-                                        {project.description}
-                                    </Text>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </CenterStack>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1, transition: { duration: 0.5 }}}
+                        viewport={{ once: true }}
+                    >
+                        <CenterStack direction='row' spacing={2} useFlexGap sx={{ margin: '2rem' }}>
+                            {projects.map((project) => (
+                                <Card 
+                                    sx={{ 
+                                        maxWidth: theme.card.maxWidth, 
+                                        background: theme.card.backgroundColor,
+                                        [theme.breakpoints.down('md')]: { maxWidth: '95%' }
+                                    }}
+                                >
+                                    <CardMedia
+                                        sx={{ height: theme.card.mediaHeight }}
+                                        image={project.img.src}
+                                        title={project.img.alt}
+                                    />
+                                    <CardContent>
+                                        <Text bold={true}>{project.name}</Text>
+                                        <Stack direction='row' spacing={1} useFlexGap>
+                                            {project.skills.map((skill) => (
+                                                <Chip
+                                                    color='info'
+                                                    label={skill}
+                                                    size='small'
+                                                    sx={{ fontWeight: theme.chip.fontWeight }}
+                                                />
+                                            ))}
+                                        </Stack>
+                                        <Text type='secondary' paddingTop='1rem'>
+                                            {project.description}
+                                        </Text>
+                                    </CardContent>
+                                </Card>
+                            ))}
+                        </CenterStack>
+                    </motion.div>
                     <CenterBox sx={{ margin: '2rem' }}>
                         <Text>You can find source code for all these projects (and more!) on my Github account. 🙂</Text>
                     </CenterBox>
