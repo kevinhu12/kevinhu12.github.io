@@ -4,6 +4,7 @@ import Text from '../shared/Text';
 import { motion } from 'framer-motion';
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { letters } from '../utils/constants';
+// import banner from '../assets/banner.jpg';
 import banner from '../assets/banner.jpg';
 
 const Home = ({
@@ -46,7 +47,7 @@ const Home = ({
             
             <Text
                 color='secondary'
-                sx={{ mt: '20rem', fontSize: '2rem', position: 'absolute' }}
+                sx={{ mt: '20rem', fontSize: '2rem', position: 'absolute', backgroundColor: '#00000060' }}
             >
                 An aspiring developer in the software world.
             </Text>
