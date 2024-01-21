@@ -10,7 +10,6 @@ import vibe from '../assets/vibe.png';
 import hackathons from '../assets/hackathons.png';
 import athletics from '../assets/athletics-soccer.jpg';
 import gaming from '../assets/destiny.png';
-import logo from '../assets/logo.png';
 
 export const workExperience = [
     {
@@ -71,7 +70,7 @@ export const projects = [
     {
         name: 'Roguelike',
         description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
-        img: { alt: 'Roguelike', src: logo },
+        img: { alt: 'Roguelike', src: vibe },
         skills: ['Unity', 'C#']
     }
 ];
