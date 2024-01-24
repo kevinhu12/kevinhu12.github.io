@@ -6,6 +6,7 @@ import iotumLogo from '../assets/iotum-logo.png';
 
 import quizzler from '../assets/quizzler.jpg';
 import vibe from '../assets/vibe.png';
+import roguelike from '../assets/roguelike.png';
 
 import hackathons from '../assets/hackathons.png';
 import athletics from '../assets/athletics-soccer.jpg';
@@ -70,7 +71,7 @@ export const projects = [
     {
         name: 'Roguelike',
         description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
-        img: { alt: 'Roguelike', src: vibe },
+        img: { alt: 'Roguelike', src: roguelike },
         skills: ['Unity', 'C#']
     }
 ];
