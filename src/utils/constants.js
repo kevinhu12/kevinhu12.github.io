@@ -64,13 +64,13 @@ export const projects = [
     },
     {
         name: 'Vibe',
-        description: 'A Discord bot used to play and manage music in voice channels. Utilized every day in my personal servers!',
+        description: 'A Discord bot used to play and manage music in voice channels. Hosted on Replit, and currently in use every day!',
         img: { alt: 'Vibe', src: vibe },
         skills: ['JavaScript', 'Discord API']
     },
     {
         name: 'Roguelike',
-        description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in development!',
+        description: 'An action-adventure 2D roguelike game, drawing inspiration from elements of the Cthulhu mythos. Currently in early development!',
         img: { alt: 'Roguelike', src: roguelike },
         skills: ['Unity', 'C#']
     }
@@ -96,13 +96,13 @@ export const letters = Array.from('I\'m Kevin');
 export const aboutMe = [
     'My name is Kevin Hu, and I\'m a fourth-year Computer Science student studying at the University of Waterloo.',
     'I\'m a fast learner who\'s passionate about writing good code, strengthening my programming arsenal, and working with new technologies.',
-    'Currently, I\'m seeking an internship for Fall 2024!'
+    'Currently, I\'m seeking an internship for Summer or Fall 2024!'
 ];
 
 export const hobbies = [
     {
         hobby: 'Hackathons',
-        description: 'The perfect environment for pushing my programming skills to the next level. One of the hackathons that I enjoyed the most was Hack the North. Our group created a Python program to change the blinking speed of LED lights depending on the genre of song being played. Other competitions that I\'ve participated in are ClimaTech and the Digital Inclusion Challenge.',
+        description: 'The perfect environment for pushing my programming skills to the next level. One of the hackathons that I enjoyed the most was Hack the North. Our group created a Python program to change the blinking speed of LED lights depending on the genre of song being played, and it was fun incorporating the Spotify API alongside an Arduino board! Other competitions that I\'ve participated in are ClimaTech and the Digital Inclusion Challenge.',
         img: hackathons
     },
     {
