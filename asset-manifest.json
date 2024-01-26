@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26a9983c.css",
+    "main.js": "/static/js/main.569a4ab7.js",
+    "static/media/destiny.png": "/static/media/destiny.dc0100fb246ee4d70251.png",
+    "static/media/athletics-soccer.jpg": "/static/media/athletics-soccer.e0ba91433f9ea7f51501.jpg",
+    "static/media/headshot.jpg": "/static/media/headshot.3842a4c066e0bb2eca9f.jpg",
+    "static/media/banner.jpg": "/static/media/banner.ca5a6e7ddd2a021e9be8.jpg",
+    "static/media/quizzler.jpg": "/static/media/quizzler.5fcda793b230d3a4cba5.jpg",
+    "static/media/hackathons.png": "/static/media/hackathons.c45395d0d1687f0d0e88.png",
+    "static/media/vibe.png": "/static/media/vibe.7447defdb728115a3911.png",
+    "static/media/roguelike.png": "/static/media/roguelike.f8f50dad36e8f685b928.png",
+    "static/media/seh-logo.png": "/static/media/seh-logo.06605f8c1dd029dfecb1.png",
+    "index.html": "/index.html",
+    "main.26a9983c.css.map": "/static/css/main.26a9983c.css.map",
+    "main.569a4ab7.js.map": "/static/js/main.569a4ab7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26a9983c.css",
+    "static/js/main.569a4ab7.js"
+  ]
+}
