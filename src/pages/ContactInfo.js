@@ -22,7 +22,7 @@ const ContactInfo = ({
                 </Grid>
 
                 {contactInfo.map((contact, idx) => (
-                    <Grid item xs={4} display='flex' flexDirection='column' alignItems='center'>
+                    <Grid item xs={12} sm={4} display='flex' flexDirection='column' alignItems='center'>
                         {idx === 0 ? (
                             <GitHubIcon color='secondary' fontSize='large' />
                         ) : idx === 1 ? (
