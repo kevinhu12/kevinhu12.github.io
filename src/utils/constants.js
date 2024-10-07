@@ -16,9 +16,9 @@ export const workExperience = [
     {
         company: 'Autodesk',
         logo: { alt: 'Autodesk', src: autodeskLogo},
-        dates: 'Jan 2024 - Present',
-        title: 'Software Engineer',
-        description: 'My current co-op! I work on enhancing the GraphQL backend APIs with new functionality to accomodate user needs.',
+        dates: 'Jan 2024 - Apr 2024 | Sep 2024 - Present',
+        title: 'Back-end Software Engineer',
+        description: 'My current co-op! I work on enhancing Java microservices with new functionality to accomodate user needs.',
         skills: ['GraphQL', 'Java', 'Spring Boot', 'AWS']
     },
     {
@@ -26,7 +26,7 @@ export const workExperience = [
         logo: { alt: 'SPS Commerce', src: spsLogo },
         dates: 'May 2023 - Aug 2023',
         title: 'Software Engineer',
-        description: 'I was most recently a software engineer on the Data Pipeline team for SPS Commerce, where I used AWS services to enhance state machines while delivering new features to the backend and frontend product.',
+        description: 'As a software engineer on the Data Pipeline team for SPS Commerce, I used AWS services to enhance state machines while delivering new features to the core product.',
         skills: ['AWS', 'C#', 'TypeScript', 'SQL']
     },
     {
@@ -34,7 +34,7 @@ export const workExperience = [
         logo: { alt: 'SEH Computer Systems', src: sehLogo },
         dates: 'Sep 2022 - Dec 2022',
         title: 'Software Developer',
-        description: 'I developed hierarchical class structures to store financial data, built RESTful APIs to encapsulate features for developer use, and performed code releases.',
+        description: 'I developed hierarchical class structures to store financial data, built RESTful APIs to manage data updates, and helped accelerate the implementation of a revamped UI.',
         skills: ['C#',  'ASP.NET Core', 'SQL']
     },
     {
@@ -96,7 +96,7 @@ export const letters = Array.from('I\'m Kevin');
 export const aboutMe = [
     'My name is Kevin Hu, and I\'m a fourth-year Computer Science student studying at the University of Waterloo.',
     'I\'m a fast learner who\'s passionate about writing good code, strengthening my programming arsenal, and working with new technologies.',
-    'Currently, I\'m seeking an internship for Summer or Fall 2024!'
+    'Currently, I\'m seeking full-time new graduate roles for May 2025!'
 ];
 
 export const hobbies = [
